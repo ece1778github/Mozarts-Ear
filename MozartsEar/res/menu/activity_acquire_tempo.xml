@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/menu_home_tempo"
+          android:title="@string/menu_home"
+          android:showAsAction="always|withText" />
+
+    <item android:id="@+id/menu_transcribe_tempo"
+          android:title="@string/menu_transcribe"
+          android:showAsAction="always|withText" />
+
+    <item android:id="@+id/menu_library_tempo"
+          android:title="@string/menu_library"
+          android:showAsAction="always|withText" />
+
+    <item android:id="@+id/menu_info_tempo"
+          android:title="@string/menu_info"
+          android:showAsAction="always|withText" />
+
+</menu>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AnalysisActivity" >
+
+    <TextView
+        android:id="@+id/analysisTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/default_analysis_msg" />
+
+    <ProgressBar
+        android:id="@+id/analysisProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="invisible" />
+
+    <HorizontalScrollView
+        android:id="@+id/musicScoreLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="60" />
+
+    <TableLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/saveAnalysisButton"
+                android:onClick="saveAnalysis"
+                android:text="@string/save_analysis_msg" />
+
+            <Button
+                android:id="@+id/analyzePatternButton"
+                android:onClick="patternAnalysis"
+                android:text="@string/pattern_analysis_msg_show" />
+
+            <Button
+                android:id="@+id/doneAnalysisButton"
+                android:onClick="doneAnalysis"
+                android:text="@string/done_analysis_msg" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LibraryActivity" >
+
+    <ListView
+        android:id="@+id/librarylistView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80" >
+    </ListView>
+   
+ 	<TextView
+        android:id="@+id/libraryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/default_library_msg"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<TableLayout
+        android:id="@+id/libButtonLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/analyzeLibraryButton"
+                android:onClick="libraryAnalysis"
+                android:text="@string/analysis_library_msg" />
+
+            <Button
+                android:id="@+id/libDeleteButton"
+                android:onClick="DeleteFile"
+                android:text="@string/delete_library_msg" />
+
+            <Button
+                android:id="@+id/libExitButton"
+                android:onClick="exitLibrary"
+                android:text="@string/exit_library_msg" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

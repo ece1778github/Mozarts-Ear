@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <item name="patternRecognition" type="id"/>
+    <item name="musicScore" type="id"/>
+    <item name="musicScoreRelativeLayout" type="id"/>
+
+</resources>

@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".AcquireTempoActivity" >
+
+    <TextView
+        android:id="@+id/tempoTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/default_tempo_msg"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/tapTempoimageButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:contentDescription="@string/tapTempoContent"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="calculateTempo"
+        android:scaleType="fitXY"
+        android:src="@drawable/tap_tempo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text="@string/configTitle"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/configLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/configMinFreq" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/configMaxFreq" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/editTextMinFreq"
+                android:gravity="center"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="84" />
+
+            <EditText
+                android:id="@+id/editTextMaxFreq"
+                android:gravity="center"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="908" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/resetTempoButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="resetTempo"
+                android:text="@string/reset_tempo_msg" />
+
+            <Button
+                android:id="@+id/doneTempoButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="doneTempo"
+                android:text="@string/done_tempo_msg" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

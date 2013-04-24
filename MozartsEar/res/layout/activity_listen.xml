@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context=".ListenActivity" >
+
+	<LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="50"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+        
+	    <LinearLayout
+	        android:id="@+id/linearLayout11"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:orientation="vertical" >
+
+	        <TextView
+        		android:id="@+id/tempoValueTextView"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:gravity="center_vertical|center_horizontal"
+        		android:text="@string/default_tempo_msg" />
+	        
+        	<Button
+        		android:id="@+id/newTempoButton"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:onClick="setNewTempo"
+        		android:text="@string/set_new__tempo_msg" />
+
+    	</LinearLayout>
+    	
+		<ImageButton
+			android:id="@+id/metroImageButton"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:contentDescription="@string/metroContent"
+        	android:gravity="center_vertical|center_horizontal"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/metro_1" />
+    
+    </LinearLayout>
+
+	<LinearLayout
+        android:id="@+id/inProgressTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:gravity="center_vertical|center_horizontal" />
+ 
+    <Button
+        android:id="@+id/stopListeningButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:onClick="stopListening"
+        android:text="@string/stop_listening_msg" />
+
+</LinearLayout>

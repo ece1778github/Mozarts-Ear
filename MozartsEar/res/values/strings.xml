@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mozart\'s Ear</string>
+    <string name="welcome_msg">Welcome to Mozart\'s Ear!</string>
+    <string name="start_msg">START</string>
+    <string name="exit_msg">EXIT</string>
+    <string name="menu_home">HOME</string>
+    <string name="menu_transcribe">TRANSCRIBE</string>
+    <string name="menu_library">LIBRARY</string>
+    <string name="menu_info">INFO</string>
+    <string name="default_tempo_msg">Tempo not set yet</string>
+    <string name="default_analysis_msg">Please wait</string>
+    <string name="reset_tempo_msg">Reset Tempo</string>
+    <string name="done_tempo_msg">Start Listening</string>
+    <string name="tapTempoContent">User establishes tempo</string>
+    <string name="title_activity_acquire_tempo">AcquireTempoActivity</string>
+    <string name="title_activity_listen">ListenActivity</string>
+    <string name="title_activity_info">Info</string>
+    <string name="title_activity_library">Library</string>
+    <string name="about_msg">How best to use this app?\n\n
+        Your instrument must be tuned to A440. An electronic drone which produces 
+        as pure a sound as possible (with minimal overtones) has the highest likelihood to work.\n\n
+        The key detection at the moment cannot deal with key modulation. For it to work, your example
+        must be of one key only. The key detection only identifies major keys. Minor keys will be 
+        identified as their relative minor (e.g. A minor will be detected as C major).\n\n
+        Why Mozart\'s Ear?\n\n
+        There is a popular story in music history about the miraculous hearing ability of the young Mozart. 
+        On a visit to the Sistine Chapel, he heard some very special music. This music had never been 
+        copied &#8212;there was only one written copy and the Vatican forbade people from copying in order 
+        to guarantee the music would not be performed anywhere else. Mozart heard this music, music 
+        the Vatican thought it had a monopoly on, and upon his return home, he wrote it all down.\n\n
+        Mozart\'s Ear is meant to give you, regardless of musical training, the ability to hear 
+        music like Mozart did.</string>
+    <string name="authors_msg">This app was created by Andrea Stuart, Jason Deng 
+        and Luis Vazquez del Mercado while students in the ECE1778 course with 
+        Prof. J. Rose at the University of Toronto.\n\n
+        Send feedback to andreastuart@gmail.com</string>
+    <string name="set_new__tempo_msg">New TEMPO</string>
+    <string name="metroContent">Metronome picture</string>
+    <string name="stop_listening_msg">STOP LISTENING</string>
+    <string name="title_activity_analysis">AnalysisActivity</string>
+    <string name="save_analysis_msg">Save</string>
+    <string name="pattern_analysis_msg_show">Analyze</string>
+    <string name="pattern_analysis_msg_hide">Hide</string>
+    <string name="done_analysis_msg">Done</string>
+    <string name="preliminary_analysis_msg">Preliminary note analysis</string>
+    <string name="note_analysis_msg">Identifying musical note </string>
+    <string name="note_undefined_msg">Unable to identify musical note \nUsing # as default</string>
+    <string name="final_note_analysis_msg">Final note analysis</string>
+    <string name="music_staff_analysis_msg">Building music graph</string>
+    <string name="title_activity_save_notation">Save Notation</string>
+    <string name="done_save_msg">Done</string>
+    <string name="cancel_save_msg">Cancel</string>
+    <string name="save_hint_msg">Enter FileName</string>
+    <string name="delete_library_msg">Delete File</string>
+    <string name="exit_library_msg">Exit</string>
+    <string name="default_library_msg">File no selected</string>
+    <string name="analysis_library_msg">View</string>
+    
+    <string name="configTitle">Note Detection Configuration</string>
+    <string name="configMinFreq">Min Cutoff\n(Hz)</string>
+    <string name="configMaxFreq">Max Cutoff\n(Hz)</string>
+
+</resources>

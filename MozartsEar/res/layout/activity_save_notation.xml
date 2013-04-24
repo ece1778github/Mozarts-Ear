@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SaveNotationActivity" >
+
+    <EditText
+        android:id="@+id/NotationSaveName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/save_hint_msg"
+        android:inputType="textUri"
+        android:ems="10" >
+        <requestFocus/>
+    </EditText>
+
+    <Button
+        android:id="@+id/cancelSaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/doneSaveButton"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="cancelSaveNotation"
+        android:text="@string/cancel_save_msg" />
+
+    <Button
+        android:id="@+id/doneSaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/NotationSaveName"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="saveNotation"
+        android:text="@string/done_save_msg" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSave"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="invisible" />
+
+</RelativeLayout>
